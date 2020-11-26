@@ -1,0 +1,35 @@
+<li [ngClass]="{'list-group-item':true,
+                'list-group-item-info': hardstyleSinger == 'Ran D',
+                'list-group-item-danger': hardstyleSinger == 'Da Tweekaz',
+                'list-group-item-warning': hardstyleSinger == 'Adaro'}">
+
+
+  <div class="divii">
+    <div>
+      <div class="auteur" *ngIf="hardstyleSinger =='Ran D'">
+        <img
+          src="https://vignette.wikia.nocookie.net/hardstyle/images/d/d3/Ran-D.jpg/revision/latest?cb=20140308171452">
+      </div>
+      <div class="auteur" *ngIf="hardstyleSinger =='Da Tweekaz'">
+        <img src="https://fstvls.s3.amazonaws.com/69/68784.jpg">
+      </div>
+    </div>
+    <div class="auteur" *ngIf="hardstyleSinger =='Adaro'">
+      <img src="https://vignette.wikia.nocookie.net/hardstyle/images/d/da/Adaro.jpg/revision/latest?cb=20140306180336">
+    </div>
+    <div>
+      <div class="genre" *ngIf="hardstyleGenre == 'hardstyle'">
+        <img
+          src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/39d0336b-660a-4f7b-8a87-140e55ee2f8b/d3961zr-530939f0-d1d7-484c-9211-484ba38149b7.png/v1/fill/w_900,h_900,q_80,strp/hardstyle_logo_by_styoan_d3961zr-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOiIsImlzcyI6InVybjphcHA6Iiwib2JqIjpbW3siaGVpZ2h0IjoiPD05MDAiLCJwYXRoIjoiXC9mXC8zOWQwMzM2Yi02NjBhLTRmN2ItOGE4Ny0xNDBlNTVlZTJmOGJcL2QzOTYxenItNTMwOTM5ZjAtZDFkNy00ODRjLTkyMTEtNDg0YmEzODE0OWI3LnBuZyIsIndpZHRoIjoiPD05MDAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.tLkakwXpVRRG37inrr6i8AlibCRjSHHDRRfT_Vx5Uv0">
+      </div>
+      <div class="genre" *ngIf="hardstyleGenre == 're-style'">
+        <img src="https://content.hardtunes.com/albums/3882/3944/original.jpg">
+      </div>
+    </div>
+  </div>
+
+
+  <h3 [ngStyle]="{color: changeColor()}">{{hardstyleName}} / {{getSinger()}} / {{getGenre()}} </h3>
+  <img class="iimg" [src]="hardstylePicture" class="affiche">
+  <button class="bout btn btn-outline-danger" (click)="listenHarstyle()">Ecouter</button>
+</li>

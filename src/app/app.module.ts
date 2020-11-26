@@ -2,10 +2,13 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
+import { HardstyleComponent } from './hardstyle/hardstyle.component';
+
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    HardstyleComponent
   ],
   imports: [
     BrowserModule
