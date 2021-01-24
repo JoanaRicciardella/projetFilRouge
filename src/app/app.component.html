@@ -1,13 +1,35 @@
-<!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  <h1>
-    Welcome to {{ title }}!
-  </h1>
-  <img width="300" alt="Logo" src="https://i.skyrock.net/0954/61460954/pics/2607410462_1.gif">
+
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Navbar</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto ">
+        <li class="nav-item" routerLinkActive= "active">
+          <a class="nav-link " routerLink="">Home</a>
+        </li>
+        <li class="nav-item" routerLinkActive= "active">
+          <a class="nav-link" routerLink="hardstyles">Hardstyle</a>
+        </li>
+        <li class="nav-item" routerLinkActive= "active">
+          <a class="nav-link" routerLink="new">Nouveau</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="navbar-right">
+    Connexion: {{time}} s
+  </div>
+</nav>
+<div class="container">
+  <div class="row">
+    <div class="col-12">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
 </div>
-<main>
-  <ul class="list-group">
-    <app-hardstyle *ngFor="let tmp of hardstyles" [hardstyleName]="tmp.name" [hardstyleSinger]="tmp.singer"
-      [hardstylePicture]="tmp.affiche" [hardstyleGenre]="tmp.genre"></app-hardstyle>
-  </ul>
-</main>
