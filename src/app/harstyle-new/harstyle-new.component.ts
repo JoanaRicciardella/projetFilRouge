@@ -20,7 +20,7 @@ export class HarstyleNewComponent implements OnInit {
     this.newHardstyle = {
       name: null,
       singer: null,
-      affiche: null,
+      picture: null,
       genre: null
     };
   }

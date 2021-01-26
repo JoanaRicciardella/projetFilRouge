@@ -1,9 +1,8 @@
 /* You can add global styles to this file, and also import other style files */
 @import'~bootstrap/dist/css/bootstrap.css';
 
-.auteur img{
-    width: 60px;
-    border-radius: 50%;
+.col-12{
+    width: 50%;
 }
 
 main{
@@ -18,6 +17,11 @@ main{
 }
 
 .genre img{
+    width: 60px;
+    border-radius: 50%;
+}
+
+.chanteur img{
     width: 60px;
     border-radius: 50%;
 }

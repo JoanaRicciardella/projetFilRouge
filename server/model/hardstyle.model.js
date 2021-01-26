@@ -2,10 +2,10 @@ const mongoose = require('mongoose');
 
 
 var hardstyleSchema = mongoose.Schema ({
-Name: String,
-Singer: String,
-Picture: String,
-Genre: String
+name: String,
+singer: String,
+picture: String,
+genre: String
 })
 
 var Hardstyle = mongoose.model('Hardstyle', hardstyleSchema);

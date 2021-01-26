@@ -18,7 +18,7 @@ export class HarstyleModifComponent implements OnInit {
 
   ngOnInit() {
     const id = this.route.snapshot.params['id'];
-    this.hardstyle = this.Hardstyle.getHardstyleById(id).subscribe(res => {
+    this.Hardstyle.getHardstyleById(id).subscribe(res => {
       this.hardstyle = res;
     })
   }

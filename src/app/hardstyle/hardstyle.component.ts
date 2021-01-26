@@ -36,7 +36,7 @@ export class HardstyleComponent implements OnInit {
     } else if (this.hardstyleSinger == 'Da Tweekaz') {
       return 'red';
     } else {
-      console.log('ERROR');
+      console.log(';(');
     }
   }
 
